@@ -1,7 +1,5 @@
 # Warp-Drive
 
-![Engage](https://gph.is/g/E1megwq)
-
 ## Commands
 
 ### <name\>
