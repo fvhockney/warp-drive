@@ -2,6 +2,8 @@
 
 ## Commands
 
+use `warp` and the commands below to go directly to your favorite directories
+
 ### <name\>
 Warp directly to `<name>`
 
