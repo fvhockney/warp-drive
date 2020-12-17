@@ -55,7 +55,7 @@ For now:
 
 ## The nitty gritty
 
-`warp-drive` is inspired by programs such as [ZSH-z](https://github.com/agkozak/zsh-z), [goto](https://github.com/iridakos/goto), [warp-dir](https://github.com/kigster/warp-dir), [wd](https://github.com/mfaeravaag/wd), [DirectoryWarp](https://github.com/LtHummus/DirectoryWarp), and I'm sure more that I just haven't found yet.
+`warp-drive` is inspired by programs such as [ZSH-z](https://github.com/agkozak/zsh-z), [goto](https://github.com/iridakos/goto), [warp-dir](https://github.com/kigster/warp-dir), [wd](https://github.com/mfaeravaag/wd), [DirectoryWarp](https://github.com/LtHummus/DirectoryWarp), [zoxide](https://github.com/ajeetdsouza/zoxide), which is also written in Rust, and I'm sure more that I just haven't found yet.
 
 Instead of being written in a shell language or relying on the presence of an interpreter, the heavy lifting is passed off to a Rust binary and exposes a thin shell function to execute the needed system commands in the current context (DirectoryWarp does this with Go and I do this also in [assimilate](https://github.com/fvhockney/assimilate)).
 
