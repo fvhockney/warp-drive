@@ -1,0 +1,19 @@
+[package]
+name = "warp-drive-bin"
+version = "0.1.0"
+authors = ["Vern Hockney <fred@vernhockney.space>"]
+edition = "2018"
+readme = "Readme.md"
+repository = "https://github.com/fvhockney/warp-drive"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+#confy = "0.4.0"
+confy = { git = "https://github.com/fvhockney/confy", branch = "stable" }
+
+serde = "1.0.117"
+serde_derive = "1.0.117"
+toml = "0.5.7"
+clap = "2.33"

@@ -1,0 +1,43 @@
+#compdef warp
+typeset -A opt_args
+
+_warp() {
+    local -a ar
+    ar+=(
+    '1: :_warp_cmds'
+    '2: :_warp_commands'
+    '*::arg:->args'
+    )
+    _arguments -C $ar[@]
+    return 0
+}
+
+_warp_cmds() {
+    local commands;
+    commands=(
+        'add:add a wapoint <name> for the current path'
+        'dump:dump the config to stdout'
+        'to:go to wapoint <name>'
+        'eject:remove waypoint <name>'
+        'update:update waypoint <name> to use the current path'
+        'edit:edit the config in $EDITOR'
+        'ls:list waypoints'
+        'list:list waypoints'
+        )
+    compadd $(warp ls)
+    _describe -t commands 'warp command' commands "$@"
+}
+
+_warp_commands() {
+    case "${words[CURRENT-1]}" in
+        (show|edit|eject|to|update)
+            compadd $(warp ls)
+            ;;
+    esac
+
+}
+
+_warp "$@"
+
+#compadd $(warp ls)
+
